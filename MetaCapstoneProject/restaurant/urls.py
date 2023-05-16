@@ -14,7 +14,7 @@ urlpatterns = [
     path('reservations/', views.reservations, name="reservations"),
 
     # API:
-    path('menu/<int:pk>', views.SingleMenuItemView.as_view(), name='menu-item'),
+    path('menu-items/<int:pk>', views.SingleMenuItemView.as_view(), name='menu-item'),
     path('booking/', include(router.urls)),
     # path('api-token-auth/', obtain_auth_token),
 ]
